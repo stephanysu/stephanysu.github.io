@@ -1,0 +1,388 @@
+html {
+	background-color: #14567A;
+	font-family: Brandon Grotesque;
+	scroll-behavior: smooth;
+	width: 100%;
+}
+
+
+#home {
+	position: absolute;
+	padding:0px;
+	margin: 0px;
+}
+
+.button1 {
+	position:absolute;
+	transform: rotate(-90deg);
+	background-color:#A4C3B2; 
+  	border: none;
+ 	color: #14567A;
+  	padding: 5px 20px;
+  	text-align: center;
+  	text-decoration: none;
+ 	display: inline-block;
+  	font-size: 24px;
+  	font-family: brandon Grotesque;
+ 	height:auto;
+	margin-top: 10%;
+	margin-left: -3%;	
+	cursor: pointer;
+}
+
+.button1:hover {
+	background-color: #CBE9D8;
+	}
+
+.button2:hover {
+	background-color: #4688AC;
+	color: #DCE1DE;
+}
+
+.map {
+	width:90%;
+	margin-top: 4%;
+	margin-left: 5%;
+
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(10px);
+  }
+  to { 
+    transform: translateY(0px);
+  }
+}
+
+.pins {
+	width: 90%;
+	animation: bounce 0.7s ease-in 0s infinite alternate;
+
+}
+
+#californiapin {
+	position:absolute;
+	max-width: 35px;
+	left: 19%;
+	margin-top: 13%;
+	
+}
+
+
+#chinapin {
+	position:absolute;
+	max-width: 35px;
+	right: 8%;
+	margin-top: 16.5%;
+}
+
+/*-- Everything should be position absolute then you position things
+relative to each other. */
+
+
+
+#california {
+	position: absolute;
+	margin-top:600px;
+	width: 100%;
+	height: 589px;
+	background-color: #DCE1DE;
+}
+
+#china {
+	position: absolute;
+	margin-top: 1189px;
+	height:589px;
+	width: 100%;
+	background-color: #EDBF85;
+}
+
+
+.china-text{
+	position: absolute;
+	 left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+
+	
+}
+
+.ca-text{
+	position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+   
+}
+
+#place {
+	position:absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#description {
+	position: relative;
+	left: 50%;
+    transform: translateX(-50%);
+    margin-top: 45%;
+}
+
+.ca-image{
+	width: 100%;
+}
+.china-image{
+	width: 100%;
+}
+
+
+
+
+/*-- carousels--*/
+
+
+#carousel-image-row1 {
+	position: relative;
+	height: 400px;
+	width: 28%;
+	margin:0 auto;
+	height: 300px;
+
+  }
+
+.carousel-container1 {
+	/*--background-color: lightgreen;
+	display: flex;
+ 	flex-direction: row; 	height: 100%;--*/
+ 	margin-top: 65%;
+ 	position: relative;
+ 	height: 100%;
+ 	overflow: hidden;
+ }
+
+.carousel-track1{
+	padding:0px;
+	margin: 0px;
+	list-style: none;
+	height: 100%;
+	position: relative;
+	transition: transform 250ms ease-in;
+}
+
+
+
+.ca{
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	width: 100%;
+	height: 300px;
+	left: 2%;
+	background-color:  #DCE1DE;
+}
+
+
+
+#button-previous1 {
+	position: absolute;
+	top:50%;
+	transform: translateY(-100%);
+	background-color: transparent;
+	border-style: none;
+	width: 20px;
+	left: -60px;
+	cursor: pointer;
+}
+
+#button-next1 {
+	position: absolute;
+	top:50%;
+	transform: translateY(-100%);
+	background-color: transparent;
+	border-style: none;
+	width: 20px;
+	right: -60px;
+	cursor: pointer;
+}
+
+.button {
+	width: 22px;
+
+}
+
+ button {
+	outline: none !important;
+
+}
+
+
+
+
+#carousel-image-row2 {
+	position: relative;
+	height: 400px;
+	width: 28%;
+	margin:0 auto;
+	height: 300px;
+  }
+
+.carousel-container2 {
+	margin-top: 65%;
+ 	position: relative;
+ 	height: 100%;
+ 	overflow: hidden;
+
+ }
+
+.carousel-track2 {
+	padding:0px;
+	margin: 0px;
+	list-style: none;
+	position: relative;
+	transition: transform 250ms ease-in;
+
+}
+
+.cn{
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	width: 100%;
+	height: 300px;
+	left: 2%;
+	background-color: #EDBF85;
+}
+
+#button-previous2 {
+	position: absolute;
+	top:50%;
+	transform: translateY(-100%);
+	background-color: transparent;
+	border-style: none;
+	width: 20px;
+	left: -60px;
+	cursor: pointer;
+}
+
+#button-next2 {
+	position: absolute;
+	top:50%;
+	transform: translateY(-100%);
+	background-color: transparent;
+	border-style: none;
+	width: 20px;
+	right: -60px;
+	cursor: pointer;
+}
+
+
+
+/*--ABOUT--*/
+
+body {
+	margin:0px;
+}
+
+li {
+	list-style: none;
+	margin-top: 5px;
+}
+
+.about {
+	position: absolute;
+	width: 100%;
+	height: 590px;
+	background-color:#A4C3B2;
+}
+
+.me {
+	width: 75%;
+	
+}
+
+.mebox{
+	display: flex;
+	margin: 20px;
+	margin-top: 7%;
+	max-width: 90%;
+	margin-right: 10%;
+}
+
+
+.right {
+	position: relative;
+	margin: 20px;
+	max-width: 30%;
+	left: 20%;
+	width: 340px;
+}
+
+.left {
+	position: relative;
+	margin-left: auto;
+	width: 420px;
+}
+
+.button2{
+	transform: rotate(-90deg);
+	background-color:#14567A; 
+  	border: none;
+ 	color: #A4C3B2;
+  	padding: 5px 20px;
+  	text-align: center;
+  	text-decoration: none;
+ 	display: inline-block;
+ 	border: none;
+  	font-size: 24px;
+  	font-family: brandon Grotesque;
+ 	cursor: pointer;
+ 	height:auto;
+	position:absolute;
+	margin-top: 10%;
+	margin-left: -3%;
+
+
+}
+#greeting {
+	font-size: 35px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+#socials a {
+	color: black;
+	text-decoration: none;
+}
+
+#socials {
+	position: relative;
+	margin-top: 60px;
+	width: 100px;
+}
+
+ #socials a:hover {
+	color: #14567A;
+}
+
+
+/*-- NAV BUTTONS--*/
+
+.navbuttons {
+	bottom: 20px;
+    position: absolute;
+	margin-left: 35px;
+	width: 100%;
+	width: 120px;
+}
+
+.circle {
+	margin: 5px;
+	width: 30px;
+	background-color: none;
+	
+}
+
+a {
+	text-decoration: none;
+}
